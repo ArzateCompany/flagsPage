@@ -1,0 +1,1 @@
+(()=>{var e={743:(e,r,t)=>{e.exports=t(121)(294)},343:(e,r,t)=>{e.exports=t(121)(935)},121:e=>{"use strict";e.exports=modules}},r={};function t(s){if(r[s])return r[s].exports;var o=r[s]={exports:{}};return e[s](o,o.exports,t),o.exports}(()=>{"use strict";var e=t(743);t(343).render(e.createElement("h1",null,"React is ready"),document.getElementById("app"))})()})();
