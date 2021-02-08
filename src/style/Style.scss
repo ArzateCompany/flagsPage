@@ -1,18 +1,24 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
 * {
   margin: 0px;
   padding: 0px;
   outline: none;
 }
 
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-
 $gray-100: #FFFFFF;
 
 $theme-colors: map-merge($theme-colors, (
   "dark-light": #2B3945,
   "dark": #202C37
+));
+
+$sizes: map-merge($sizes, (
+  "30": 30%,
+  "35": 35%,
+  "40": 40%,
 ));
 
 input::placeholder{

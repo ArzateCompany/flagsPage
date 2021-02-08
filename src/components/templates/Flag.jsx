@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Search from '../molecules/Search.jsx';
+import FilterRegion from '../molecules/FilterRegion.jsx';
+
 
 const Flag = () => {
   return (
@@ -10,9 +12,12 @@ const Flag = () => {
           <div className="col-lg-6">
             <Search />
           </div>
-          <div className="col-lg-6"></div>
+          <div className="col-lg-6">
+            <FilterRegion id="filter-region" />
+          </div>
         </div>
-        <div className="row"></div>
+        <div className="row">
+        </div>
       </div>
     </section>
   );
