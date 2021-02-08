@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './components/App.jsx';
+
 import './style/Style.scss';
 
 if (module.hot) {
   module.hot.accept();
 };
 
-ReactDOM.render(<h1>React is ready</h1>, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
