@@ -1,16 +1,17 @@
 import React from 'react';
-import Icon from './Icon.jsx';
 
 import ItemSelect from './ItemSelect.jsx';
 
-const Select = ({ name, id, titleSelect, children, className = '' }) => {
+const Select = ({ name, id, titleSelect, children, className, onChange, value }) => {
   return (
     <select
       name={name}
       id={id}
       className={`form-select ${className}`}
+      onChange={onChange}
+      value={value}
     >
-      <ItemSelect textOption={titleSelect} selected="true" className="d-none" />
+      <ItemSelect textOption={titleSelect} selected className="d-none"/>
       {children}
     </select>
   );

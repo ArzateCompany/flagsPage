@@ -1,10 +1,9 @@
 import React from 'react';
 
-const ItemSelect = ({ className, value, textOption, selected }) => (
+const ItemSelect = ({ className, textOption, value }) => (
   <option
     className={` ${className}`}
     value={value}
-    selected={selected || false}
   >
     {textOption}
   </option>

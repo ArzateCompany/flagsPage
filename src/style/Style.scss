@@ -8,20 +8,33 @@
   outline: none;
 }
 
-$gray-100: #FFFFFF;
+$gray-100: #ffffff;
 
-$theme-colors: map-merge($theme-colors, (
-  "dark-light": #2B3945,
-  "dark": #202C37
-));
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "dark-light": #2b3945,
+    "dark": #202c37,
+  )
+);
 
-$sizes: map-merge($sizes, (
-  "30": 30%,
-  "35": 35%,
-  "40": 40%,
-));
+$sizes: map-merge(
+  $sizes,
+  (
+    "30": 30%,
+    "35": 35%,
+    "40": 40%,
+  )
+);
 
-input::placeholder{
+$spacers: map-merge(
+  $spacers,
+  (
+    "6": $spacer * 4,
+  )
+);
+
+input::placeholder {
   align-self: center;
   color: $light;
 }
