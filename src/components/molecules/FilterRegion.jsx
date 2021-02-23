@@ -18,9 +18,9 @@ const Form = () => {
         className="bg-transparent text-light border-0 pl-3 py-3 w-100"
         onChange={handleChange}
       >
-        <ItemSelect textOption="European" className="bg-dark-light" value='eu' />
+        <ItemSelect textOption="European" className="bg-dark-light" value='' />
         <ItemSelect textOption="African" className="bg-dark-light" value="au"/>
-        <ItemSelect textOption="North america" className="bg-dark-light" value="nafta"/>
+        <ItemSelect textOption="America" className="bg-dark-light" value="nafta"/>
       </Select>
     </form>
   );

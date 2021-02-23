@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
+import FlagContext from '../../Context/FlagContext';
+
 import Search from '../molecules/Search.jsx';
 import FilterRegion from '../molecules/FilterRegion.jsx';
 import FlagCard from '../molecules/FlagCard.jsx';
@@ -44,7 +46,7 @@ const renderFlags = () => {
             <Search />
           </div>
           <div className="col-lg-6 pr-0">
-            <FilterRegion id="filter-region" />
+            <FilterRegion id="filter-region"/>
           </div>
         </div>
         <div className="row">

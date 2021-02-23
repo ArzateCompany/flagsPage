@@ -1,7 +1,9 @@
 import {createContext} from 'react';
 
-export const Context = createContext({
+const FlagContext = createContext({
   flags: [],
   filterFlag: '',
   filterRegion: '',
 });
+
+export default FlagContext;
